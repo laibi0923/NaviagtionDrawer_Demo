@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.support.v4.app.*;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -62,9 +63,11 @@ public class MainActivity extends AppCompatActivity {
                     switch (item.getItemId()){
 
                         case R.id.nav_item1:
+							Fragment_Transaction(new Fragment_Page1());
                             break;
 
                         case R.id.nav_item2:
+							Fragment_Transaction(new Fragment_Page2());
                             break;
 
                         case R.id.nav_item3:
@@ -78,10 +81,16 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
+		
+		Fragment_Transaction(new Fragment_Page1());
+		//getSupportFragmentManager().beginTransaction().replace(R.id.mFrameLayout, new Fragment_Page1()).commit();
         mNavigationView.getMenu().getItem(0).setChecked(true);
     }
 
+	
+	private void Fragment_Transaction(Fragment fm){
+		getSupportFragmentManager().beginTransaction().replace(R.id.mFrameLayout, fm).commit();
+	}
 
 
 }

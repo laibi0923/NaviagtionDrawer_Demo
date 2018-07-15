@@ -2,4 +2,14 @@
     <string name="app_name">NaviagtionDrawer_Demo</string>
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
+	
+	<string name="page1_title">Teting Title</string>
+	<string name="page1_content">
+		testing content, bababbababababbababbababa\n
+		babbababababababbsjsjsjsjsjjsjsjjsjskskkdkke
+		kdkkdkrkekkkrrjrjkrkrkrkkrkrkrkkrkrkrkkrkrkfk
+		kdkrkrkrkrkkfkfkfkfkktkbabbababababababababbab
+		ab
+	</string>
+	
 </resources>
